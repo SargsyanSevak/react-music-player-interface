@@ -1,5 +1,10 @@
 <img width="1470" alt="Screenshot 2024-01-25 at 13 41 48" src="https://github.com/SargsyanSevak/react-music-player-interface/assets/107807929/f705cf97-7533-4331-99cc-0772db8bcfb9">
 
+<img width="1470" alt="Screenshot 2024-01-25 at 13 48 00" src="https://github.com/SargsyanSevak/react-music-player-interface/assets/107807929/53663eed-38e6-466d-b396-50a3f0cc05fe">
+
+<img width="305" alt="Screenshot 2024-01-25 at 13 46 53" src="https://github.com/SargsyanSevak/react-music-player-interface/assets/107807929/091bf283-745c-4c6c-8683-f7140182dee5">
+
+<img width="305" alt="Screenshot 2024-01-25 at 13 47 18" src="https://github.com/SargsyanSevak/react-music-player-interface/assets/107807929/fe605896-e499-4e96-a561-171da9464b4c">
 
 
 # React Music Player Interface with Music Upload Form
