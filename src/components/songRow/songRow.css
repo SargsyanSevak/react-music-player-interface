@@ -1,0 +1,184 @@
+.accordion__section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style the buttons that are used to open and close the accordion panel */
+  .accordion {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+  }
+  
+ 
+  /* Style the accordion content title */
+  .accordion__title {
+    font-weight: 200;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  /* Style the accordion chevron icon */
+  .accordion__icon {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+  }
+  
+  /* Style to rotate icon when state is active */
+  .rotate {
+    transform: rotate(90deg);
+  }
+  
+  /* Style the accordion content panel. Note: hidden by default */
+  .accordion__content {
+    overflow: hidden;
+    box-shadow: 30px;
+    transition: max-height 0.6s ease;
+    border-bottom: 2px solid var(--border-light);
+  }
+  
+  .accordion-container{
+    padding: 16px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:12px
+  }
+  .accordion-artist-name{
+    display: none;
+  }
+  .accordion-track{
+    display: none;
+  }
+  /* Style the accordion content text */
+  .accordion__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 18px 10px;
+  }
+  
+  .song-list-row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.2s ease;
+  }
+  .song-list-row:hover{
+	background: var(--border-light);
+  }
+.song-list-row .play-btn-body{
+	width: 10%;
+	height: 60px;
+	font-size: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.song-list-row .song-name-body{
+	width: 35%;
+	height: 60px;
+  line-clamp: 1;
+	color: var(--heading);
+	display: flex;
+	align-items: center;
+	padding-left: 16px;
+	font-weight: bold;
+  overflow: hidden;
+}
+.song-list-row .artist-name-body{
+	width: 25%;
+	height: 60px;
+	color: var(--heading);
+	display: flex;
+	align-items: center;
+	padding-left: 16px;
+	font-weight: bold;
+}
+.song-list-row .track-body{
+	width: 10%;
+	height: 60px;
+	color: var(--heading);
+	display: flex;
+	align-items: center;
+	padding-left: 16px;
+	font-weight: bold;
+}
+.song-list-row .btn-group-body{
+	width: 20%;
+	height: 60px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+  gap: 6px;
+} 
+.drag-icon{
+  cursor: move;
+}
+
+.lyrics{
+  color: var(--heading);
+}
+.lyrics span{
+  color: black;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 10px 0px;
+}
+@media screen and (max-width:768px){
+    .song-list-row .artist-name-body
+    {
+       display: none;
+    }
+    .accordion-artist-name{
+        display: block;
+      }
+    .song-list-row .play-btn-body{
+        width: 15%;
+    }
+    .song-list-row .song-name-body{
+        width: 45%;
+        padding-left: 6px;
+        padding-right: 12px;
+    }
+    .song-list-row .track-body{
+        width: 20%;
+    }
+    .song-list-row .btn-group-body{
+        width: 20%;
+    }
+}
+@media screen and (max-width:640px){
+    .song-list-row .play-btn-body
+    {
+        justify-content: start;
+        gap: 6px;
+        font-size: 20px;
+    }
+    .song-list-row .track-body{
+        display: none;
+    }
+    .song-list-row .track-body{
+        display: none;
+    }
+    .accordion-track{
+        display: block;
+      }
+    .song-list-row .play-btn-body{
+        width: 15%;
+    }
+    .song-list-row .song-name-body{
+        width: 60%;
+        font-size: 12px;
+    }
+    .song-list-row .btn-group-body{
+        width: 25%;
+    }
+
+}

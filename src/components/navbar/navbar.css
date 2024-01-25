@@ -1,0 +1,150 @@
+.active{
+    background-color: #1d4ed8;
+}
+.header {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 6px;
+    background-color: var(--bg-color);
+    position: sticky;
+    top: 6px; /* Adjust this value based on how much space you want */
+    z-index: 100; /* Add a z-index to ensure it's above other elements */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+	border-radius: 12px;
+	
+	background-color:  var(--bg-color);
+    color: black;
+   
+}
+
+nav .search_box {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+nav .search_box .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    line-height: 1; /* Set line-height to 1 for vertical alignment */
+    color: var(--heading);
+  }
+
+nav .search_box input{
+    width: 100%;
+    height: 100%;
+    padding: 12px 24px 12px 36px;
+    border-radius: 40px;
+    border: 1px solid var(--border);
+    outline: none;
+}
+nav .buttons-group {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+nav .buttons-group .track-number{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+nav .buttons-group li {
+   list-style: none; 
+}
+
+
+nav .buttons-group li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav .buttons-group li a:not(.active):hover {
+    background-color:#172554 ;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    font-size: 60px;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 1024px) {
+    nav .menu {
+        display: flex;
+    }
+    nav .search_box{
+    width: 70%;
+}
+    nav {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    nav .buttons-group {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+        gap: 10px;
+    }
+
+    nav .buttons-group.open {
+        display: flex;
+    }
+
+    nav .buttons-group li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .buttons-group li a {
+        margin: 0.2rem 0.5rem;
+    }
+    nav .buttons-group .track-number{
+        justify-content: start;
+    }
+    nav .buttons-group .track-number{
+        display: inline-flex;
+        width: fit-content;
+        margin: 0;
+    }
+    nav .buttons-group{
+        flex-direction: row;
+        padding: 40px 10px 10px 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

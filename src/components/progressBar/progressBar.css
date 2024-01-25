@@ -1,0 +1,41 @@
+:root {
+    --colour1: #f1c40f;
+    --colour2: #2c3e50;
+    --speed: 4s;
+}
+
+@keyframes slide {
+    from {
+        background-position-x: 0;
+   }
+    to {
+        background-position-x: 113px;
+   }
+}
+.bar-container {
+    margin-top: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar-container .bar {
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    /* box-shadow: 0px 10px 13px -6px rgba(44, 62, 80, 1); */
+    background-color: var(--colour2);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 40px, var(--colour1) 40px, var(--colour1) 80px);
+    animation: slide var(--speed) linear infinite;
+    will-change: background-position;
+}
+@media only screen and (max-width: 450px) {
+    .bar-container .bar {
+        height: 20px;
+   }
+}
+@media only screen and (max-width: 350px) {
+    .bar-container .bar {
+        height: 16px;
+   }
+}

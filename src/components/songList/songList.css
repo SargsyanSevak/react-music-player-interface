@@ -1,0 +1,90 @@
+/* .song-list{
+	margin-bottom: 20px;
+} */
+.song-list-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2px;
+	margin-top: 40px;
+	margin-bottom: 4px;
+  }
+.song-list-header .play-btn{
+	width: 10%;
+	height: 60px;
+	background: var(--bg-primary);
+}
+.song-list-header .song-name{
+	width: 35%;
+	height: 60px;
+	background: var(--bg-primary);
+	color: var(--heading);
+	display: flex;
+	align-items: center;
+	padding-left: 16px;
+	font-weight: bold;
+}
+.song-list-header .artist-name{
+	width: 25%;
+	height: 60px;
+	background: var(--bg-primary);
+	color: var(--heading);
+	display: flex;
+	align-items: center;
+	padding-left: 16px;
+	font-weight: bold;
+}
+.song-list-header .track{
+	width: 10%;
+	height: 60px;
+	background: var(--bg-primary);
+	color: var(--heading);
+	display: flex;
+	align-items: center;
+	padding-left: 16px;
+	font-weight: bold;
+}
+.song-list-header .btn-group{
+	width: 20%;
+	height: 60px;
+	background: var(--bg-primary);
+} 
+
+@media screen and (max-width:768px){
+    .song-list-header .artist-name{
+        display: none;
+    }
+    .song-list-header .play-btn{
+        width: 15%;
+    }
+    .song-list-header .song-name{
+        width: 45%;
+    }
+    .song-list-header .track{
+        width: 20%;
+    }
+    .song-list-header .btn-group{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:640px){
+    .song-list-header .song-name,
+    .song-list-header .artist-name,
+    .song-list-header .track
+    {
+        padding-left: 8px;
+    }
+    .song-list-header .track{
+        display: none;
+    }
+    .song-list-header .play-btn{
+        width: 15%;
+    }
+    .song-list-header .song-name{
+        width: 60%;
+    }
+    .song-list-header .btn-group{
+        width: 25%;
+    }
+}

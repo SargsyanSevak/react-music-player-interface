@@ -1,0 +1,223 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+:root{
+	--bg-color:rgb(234, 234, 234);
+	--bg-primary:rgb(238,238,238);
+	--bg-secondary:rgb(240,240,240);
+	--bg-hover:gray;
+	--heading:rgba(128, 128, 128, 0.938);
+	--border:rgb(188,188,188);
+	--border-light:rgba(173, 173, 173, 0.291);
+	--xl:1384px
+	--lg:1024px;
+	--md:768px;
+	--sm:640px;
+	--m:460px;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+	letter-spacing: 0.6px;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+	padding: 24px;
+  position: relative;
+}
+.container{
+	width: 100%;
+	height: fit-content;
+	max-width: 1440px;
+	margin: auto;
+}
+
+
+
+
+.btn{
+	border: 1px solid var(--border);
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 8px;
+	height: 40px;
+	padding-left: 16px;
+	transition: all .3s ease-in-out;
+	background-color: var(--bg-secondary);
+	white-space: nowrap;
+}
+
+.btn .btn_icon{
+	font-size: 14px;
+}
+.btn .btn_arrow_up{
+	font-size: 14px;
+	border-left: 1px solid var(--border);
+	height: 100%;
+	width: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	margin-left: 8px;
+}
+.filter{
+	position: relative;
+}
+.filter input{
+	border-radius: 40px;
+	border: 1px solid var(--border);
+	padding: 9px 24px 9px 40px;
+	position: relative;
+	font-size: 18px;
+	outline: none;
+}
+.filter .search_icon{
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+	font-size: 20px;
+	margin-top: 2px;
+	color: gray;
+}
+.btn:hover{
+	background-color: var(--bg-hover);
+	color: white;
+}
+.load-more-btn{
+	transition: all 0.3s ease-in-out;
+
+}
+.load-more-btn:hover{
+	background-color: var(--bg-hover);
+	color: white;
+}
+/* Add these styles to your CSS or Styled Components */
+
+
+
+.transparent-button{
+	background: transparent;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-size: 18px;
+}
+/* Loader animation for loading state  start*/
+.loader-container{
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.loader {
+	width: 8px;
+	height: 40px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-top: 10px;
+	position: relative;
+	background: currentColor;
+	color: #1467C2;
+	box-sizing: border-box;
+	animation: animloader 0.3s 0.3s linear infinite alternate;
+  }
+  .loader::after,
+  .loader::before {
+	content: '';  
+	box-sizing: border-box;
+	width: 8px;
+	height: 40px;
+	border-radius: 4px;
+	background: currentColor;
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+	animation: animloader1 0.3s  0.45s  linear infinite alternate;
+  }
+  .loader::before {
+	left: -20px;
+	animation-delay: 0s;
+  }
+  
+  @keyframes animloader {
+	0% {
+	  height: 40px;
+	  transform: translateY(0);
+	}
+	100% {
+	  height: 10px;
+	  transform: translateY(30px);
+	}
+  }
+  
+  @keyframes animloader1 {
+	0% {
+	  height: 48px;
+	}
+	100% {
+	  height: 4.8px;
+	}
+  }
+
+ /* Loader animation for loading state  end*/ 
+ @media screen and (max-width:1024px) {
+	.header_body{
+		flex-direction: column-reverse;
+		gap: 12px;
+	}
+	header .header_body .btns_container{
+		width: 100%;
+		justify-content: space-between;
+	}
+	.search_container{
+		width: 100%;
+		display: flex;
+		justify-content: end;
+		align-items: end;
+	}
+ }
+@media screen and (max-width:768px) {
+	header .header_body .btns_container{
+		flex-wrap: wrap;
+	}
+	.transparent-button{
+		font-size: 16px;
+	}
+	.btn, .upload-btn{
+		padding-left: 0;
+		width: 120px;
+		height: 40px;
+		background-color: var(--bg-color);
+		color: black;
+		
+	}
+	.btn p,.upload-btn p, .btn .btn_arrow_up{
+		display: none;
+	}
+}
+
+@media screen and (max-width:560px) {
+	.wrapper{
+		padding: 12px;
+	}
+	.btn, .upload-btn{
+		padding-left: 0;
+		width: 60px;
+		height: 30px;
+		padding: 2px;
+		background-color: var(--bg-color);
+		color: black;
+	}
+}
