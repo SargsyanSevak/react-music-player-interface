@@ -14,17 +14,26 @@ songName, artistName,trackNumber and optionally file for the
 uploaded music data.
 Components to Create:
 ● SongList: A component to display the list of songs.
+
 ● SongRow: A subcomponent to render individual song details within
 SongList.
+
 ● PlayAllButton: A button to initiate playing all songs (simulated).
+
 ● AddAllButton: A button to add all songs to a queue (simulated).
+
 ● MusicUploadForm: A new component below the song list for users
 to upload music files.
-Music Upload Form Features:
+
+# Music Upload Form Features:
 ● Accepts audio file types like .mp3, .wav.
+
 ● Displays the selected file name.
+
 ● Has an upload button that is enabled upon file selection.
+
 ● Simulates a file upload process with a mock progress indicator.
+
 Styling:
 ● Ensure the design is consistent with the provided screenshot and
 add similar styling to the MusicUploadForm.
