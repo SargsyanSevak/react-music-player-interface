@@ -12,7 +12,9 @@ for users to upload music files from their computer.
 ● Define or extend a data model for songs to include fields like
 songName, artistName,trackNumber and optionally file for the
 uploaded music data.
-Components to Create:
+
+# Components to Create:
+
 ● SongList: A component to display the list of songs.
 
 ● SongRow: A subcomponent to render individual song details within
@@ -37,41 +39,61 @@ to upload music files.
 Styling:
 ● Ensure the design is consistent with the provided screenshot and
 add similar styling to the MusicUploadForm.
+
 ● Use CSS or styled-components for a cohesive look and feel.
 State Management:
+
 ● Handle the state for the list of songs and the file selected for upload.
+
 ● Consider using the React Context API or Redux if global state management
 becomes necessary.
-Interactivity:
+
+# Interactivity:
 ● Implement hover effects for the song rows.
+
 ● Print messages to the console on button clicks for Play All, Add
 All, and file uploads.
+
 ● The upload button should handle the mock upload process, with a
 timeout to simulate network latency.
 
 # Deliverables:
 ● A functional React application created with Create React App.
+
 ● The source code should include the new MusicUploadForm component.
+
 ● The components should be well-documented with comments.
+
 ● A README file that provides:
+
 ● An overview of the component structure.
+
 ● The state management approach.
+
 ● Instructions on how to run the application locally.
+
 ● Any assumptions or additional features implemented.
+
 ● Include basic unit tests for the components using Jest or React Testing
 Library.
-Additional Notes:
+# Additional Notes:
+
 ● For the MusicUploadForm, assume the backend API is not yet available,
 but structure the component so that integrating with an API can be done
 with minimal changes.
+
 ● Accessibility is important; ensure that the form is accessible with proper
 labels and ARIA attributes.
+
 ● The UI should be responsive and maintain the layout across different
 screen sizes.
+
 ● Even though the music upload is simulated, the application should handle
 file selection and button state changes as if it were a real feature.
+
 ● Provide visual feedback for the user during the "upload" process, such as a
 spinner or progress bar.
+
 ● Include error handling in the form to simulate and display upload errors.
 
 # Getting Started with Create React App
